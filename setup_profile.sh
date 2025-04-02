@@ -80,6 +80,7 @@ if [[ "$LAYERS" ]]; then
 bitbake-layers add-layer --force $(cd ${COMBODIR}/src; echo $LAYERS | xargs readlink -f)
 fi
 
+echo "profile: ${PROFILEDIR} generated"
 )
 }
 
